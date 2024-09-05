@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(fon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative; /* Անհրաժեշտ է՝ կեղծ ընտրիչը ճիշտ դիրքավորելու համար */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Թափանցիկ սպիտակ գույն */
+    z-index: 1; /* Գոյություն ունեցող պարունակության տակ */
+}
+
+header, .invitation, #overlay {
+    position: relative;
+    z-index: 2; /* Գոյություն ունեցող պարունակությունը բերում ենք վերև */
+}
+
+header {
+    margin: 20px 0;
+}
+header h1 {
+   font-family: 'Playfair Display', serif; 
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 
+        -1px -1px 0 #ff0073,  
+        1px -1px 0 #ff0073,
+        -1px 1px 0 #ff0073,
+        1px 1px 0 #ff0073; /* Ստեղծում ենք սպիտակ եզրագիծ */
+}
+
+.header-gif {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.popup-image {
+    width: 300px;
+    height: 450px;
+    border-radius: 50%;
+    position: relative;
+    border: 3px solid #852B74;
+}
+
+#closeButton {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 145px;
+    border: 3px solid #ffffff;
+}
+p {
+    font-family: 'Playfair Display', serif; /* Գեղեցիկ և նուրբ տառատեսակ */
+    font-weight: 100; /* Շատ բարակ տառաչափ */
+    font-size: 18px; /* Հարմար տառաչափ ընթերցման համար */
+    line-height: 1.6; /* Լավ ընթեռնելիության համար տողերի բարձրություն */
+    color: #ffffff; /* Տեքստի հիմնական գույնը */
+    text-shadow: 
+        -1px -1px 0 #852B74,  
+        1px -1px 0 #852B74,
+        -1px 1px 0 #852B74,
+        1px 1px 0 #852B74; /* Վարդագույն եզրագծեր */
+}
+.gohar{
+    width: 350px;
+     border-radius: 50%;
+    height: 250px;
+    border: 3px solid #852B74;
+}
+
+
+
+/* Countdown timer styling */
+#countdown {
+    
+    color: #000;
+    text-align: center;
+    
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+#countdown h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color:#ffffff;
+    text-shadow: 
+        -1px -1px 0 #852B74,  
+        1px -1px 0 #852B74,
+        -1px 1px 0 #852B74,
+        1px 1px 0 #852B74; 
+}
+
+.time-segment {
+    margin: 0 15px;
+    text-align: center;
+}
+
+#timer span {
+    font-size: 30px;
+    display: block;
+}
+
+#timer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.separator {
+    width: 1px;
+    height: 60px;
+    background-color: #000;
+}
+
+h2{
+    color :#ffffff;
+    text-shadow: 
+        -1px -1px 0 #ff0073,  
+        1px -1px 0 #ff0073,
+        -1px 1px 0 #ff0073,
+        1px 1px 0 #ff0073; 
+}
+
+.text1{
+    margin-top:80px;
+}
+
+.map-button {
+            background-color: #7a00ff2a; /* Թույլ թափանցիկ մանուշակագույն */
+            
+            border-radius: 15px; /* Ընտրովի անկյուններ */
+            
+            padding: 10px 20px; /* Ընտրովի ներսի տարածությունը */
+            font-family: 'Arial', sans-serif; /* Տառատեսակ */
+            font-size: 16px; /* Տառի չափը */
+            text-align: center; /* Տեքստը կենտրոնում */
+            text-transform: uppercase; /* Տեքստը մեծատառերով */
+            cursor: pointer; /* Կուրսորին ցուցադրող ձեռքի պատկեր */
+            outline: none; /* Կոճակի շուրջը շրջապատող ելքովի պատկեր */
+            
+        }
+
+        .button:hover {
+            background-color: rgba(133, 43, 116 0.7); /* Թույլ մանուշակագույնը մգանում է սահելու ժամանակ */
+        }
+ 
+ a{
+     text-decoration: none; 
+     color :#ffffff;
+    text-shadow: 
+        -1px -1px 0 #852B74,  
+        1px -1px 0 #852B74,
+        -1px 1px 0 #852B74,
+        1px 1px 0 #852B74; 
+ }
+ 
+ #countdown{
+     font-family: 'Playfair Display', serif; /* Գեղեցիկ և նուրբ տառատեսակ */
+    font-weight: 100; /* Շատ բարակ տառաչափ */
+    font-size: 28px; /* Հարմար տառաչափ ընթերցման համար */
+    line-height: 1.6; /* Լավ ընթեռնելիության համար տողերի բարձրություն */
+    color: #ffffff; /* Տեքստի հիմնական գույնը */
+    text-shadow: 
+        -1px -1px 0 #852B74,  
+        1px -1px 0 #852B74,
+        -1px 1px 0 #852B74,
+        1px 1px 0 #852B74; /* Վարդագույն եզրագծեր */
+ }
+ 
