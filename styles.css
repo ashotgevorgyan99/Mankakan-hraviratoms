@@ -35,10 +35,10 @@ header h1 {
     font-size: 30px;
     color: #ffffff;
     text-shadow: 
-        -1px -1px 0 #ff0073,  
-        1px -1px 0 #ff0073,
-        -1px 1px 0 #ff0073,
-        1px 1px 0 #ff0073; /* Ստեղծում ենք սպիտակ եզրագիծ */
+        -1px -1px 0 #852B74,  
+        1px -1px 0 #852B74,
+        -1px 1px 0 #852B74,
+        1px 1px 0 #852B74; /* Ստեղծում ենք սպիտակ եզրագիծ */
 }
 
 .header-gif {
@@ -100,15 +100,15 @@ p {
     line-height: 1.6; /* Լավ ընթեռնելիության համար տողերի բարձրություն */
     color: #ffffff; /* Տեքստի հիմնական գույնը */
     text-shadow: 
-        -1px -1px 0 #852B74,  
-        1px -1px 0 #852B74,
-        -1px 1px 0 #852B74,
-        1px 1px 0 #852B74; /* Վարդագույն եզրագծեր */
+        -1px -1px 0 #0a008f,  
+        1px -1px 0 #0a008f,
+        -1px 1px 0 #0a008f,
+        1px 1px 0 #0a008f; /* Վարդագույն եզրագծեր */
 }
 .gohar{
     width: 350px;
      border-radius: 50%;
-    height: 250px;
+    height: 300px;
     border: 3px solid #852B74;
 }
 
@@ -169,10 +169,10 @@ p {
 h2{
     color :#ffffff;
     text-shadow: 
-        -1px -1px 0 #ff0073,  
-        1px -1px 0 #ff0073,
-        -1px 1px 0 #ff0073,
-        1px 1px 0 #ff0073; 
+        -1px -1px 0 #852B74,  
+        1px -1px 0 #852B74,
+        -1px 1px 0 #852B74,
+        1px 1px 0 #852B74; 
 }
 
 .text1{
@@ -220,4 +220,4 @@ h2{
         -1px 1px 0 #852B74,
         1px 1px 0 #852B74; /* Վարդագույն եզրագծեր */
  }
- 
+  
