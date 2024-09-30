@@ -13,7 +13,7 @@ document.getElementById('closeButton').addEventListener('click', function() {
     // Existing code...
 
     // Countdown logic
-    const countdownDate = new Date("Sep 19, 2024 00:00:00").getTime();
+    const countdownDate = new Date("Oct 13, 2024 00:00:00").getTime();
 
     const countdownFunction = setInterval(function() {
         const now = new Date().getTime();
@@ -35,6 +35,5 @@ document.getElementById('closeButton').addEventListener('click', function() {
         }
     }, 1000);
 });
-
 
 
