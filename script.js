@@ -7,7 +7,7 @@ document.addEventListener('keydown', function(event) {
 function checkPassword() {
     const password = document.getElementById('password-input').value;
     const errorMessage = document.getElementById('error-message');
-    if (password === '0000') {
+    if (password === '3123') {
         document.getElementById('password-overlay').style.display = 'none';
         document.getElementById('main-content').style.display = 'block';
         document.body.style.overflow = 'auto';
